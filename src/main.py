@@ -1,17 +1,9 @@
-from matrix import matrix
-import time
+from matrix import Matrix
+from clock import Clock
+from console import Console
+from input import Input
 
-# Initializing display
-display = matrix()
-
-# Drawing rectangle (2x3), starting at 2,3
-display.rectangle(2,3,2,3)
-
-# Updating screen
-display.update()
-
-# Waiting 3 seconds
-time.sleep(3)
-
-# Clearing screen
-display.clear()
+display = Matrix()
+clock = Clock(60)
+console = Console()
+input = Input()
