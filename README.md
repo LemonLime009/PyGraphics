@@ -1,2 +1,2 @@
 # PyGraphics
-A Python- based 2d graphics framework
+A Python-based 2d graphics framework
