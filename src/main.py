@@ -3,10 +3,10 @@ from clock import Clock
 from console import Console
 from input import Input
 
-display = Matrix()
-clock = Clock(120)
-console = Console()
-input = Input()
+display = Matrix(True)
+clock = Clock(True, 120)
+console = Console(True)
+input = Input(True)
 
 gameCondition = True
 
@@ -21,7 +21,5 @@ while gameCondition:
     display.clear()
     display.rectangle(4,4,0,0)
     display.update()
-
-    input.detect("K_LEFT", rectangle())
 
     clock.endTicker()
