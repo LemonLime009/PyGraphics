@@ -1,9 +1,7 @@
-import pygame
-
-pygame.init()
+import keyboard
 
 class Input:
-  def acceptInput(self, key, action):
-    keysPressed = pygame.key.get_pressed()
-    if keysPressed[self.key]:
-      self.action()
+  def detect(self, key, action):
+    if keyboard.is_pressed(key):
+      action()
+      break
