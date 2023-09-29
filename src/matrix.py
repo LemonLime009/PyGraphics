@@ -1,13 +1,11 @@
 import os
 
-
 def clearFunction():
   os.system("clear")
 
-
 class Matrix:
-
-  def __init__(self, width=10, height=10):
+  def __init__(self, start, width=10, height=10):
+    self.start = start
     self.width = width
     self.height = height
     self.matrix = [["  " for _ in range(width)] for _ in range(height)]

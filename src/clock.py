@@ -1,9 +1,8 @@
 import time
 
-
 class Clock():
-
-  def __init__(self, fps):
+  def __init__(self, start, fps):
+    self.start = start
     self.fps = fps
     self.frame_duration = 1 / self.fps
 

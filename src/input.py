@@ -1,6 +1,5 @@
-import keyboard
+import pygame
 
 class Input:
-    def detect(self, key, action):
-        if keyboard.is_pressed(key):
-            action()
+    def __init__(self, start):
+        self.start = start
