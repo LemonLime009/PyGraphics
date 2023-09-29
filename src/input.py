@@ -1,11 +1,9 @@
-import keyboard
+import pygame
 
-class Input():
-  def startRecording(self):
-    self.events = keyboard.record(until="esc")
+pygame.init()
 
-  def event(self, key, action):
-    key = self.key
-    for event in self.events:
-      if event.event_type == keyboard.key:
-        action()
+class Input:
+  def acceptInput(self, key, action):
+    keysPressed = pygame.key.get_pressed()
+    if keysPressed[self.key]:
+      self.action()
